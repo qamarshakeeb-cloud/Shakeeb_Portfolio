@@ -12,7 +12,7 @@ Route::post('/contact', function (Request $request) {
         'message' => 'required|string',
     ]);
 
-    Mail::to('maaz.ashraf23@gmail.com')->send(new ContactFormMail($data));
+    Mail::to('mdshakeebqamar@gmail.com')->send(new ContactFormMail($data));
 
     return response()->json([
         'message' => 'Message sent successfully. Please check your email.'
