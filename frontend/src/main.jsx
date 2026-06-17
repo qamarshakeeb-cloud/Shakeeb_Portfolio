@@ -212,10 +212,6 @@ function App() {
                                 ))}
                             </div>
 
-                            <div className="project-links">
-                                <a href="#">GitHub</a>
-                                <a href="#">🔗 Demo</a>
-                            </div>
                         </article>
                     ))}
                 </div>
