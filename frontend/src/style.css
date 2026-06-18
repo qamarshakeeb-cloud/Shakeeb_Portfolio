@@ -25,3 +25,38 @@ form { display: grid; gap: 12px; margin-top: 18px; }
 input, textarea { width: 100%; padding: 14px; border-radius: 12px; border: 1px solid var(--line); background: #020617; color: var(--text); font: inherit; }
 .socials a, .project-links a { display: inline-flex; align-items: center; gap: 7px; color: var(--accent); }
 @media (max-width: 760px) { .navbar { align-items: flex-start; gap: 12px; flex-direction: column; } .grid, .projects { grid-template-columns: 1fr; } }
+
+
+
+.chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 9999;
+}
+
+.chat-window {
+  position: fixed;
+  bottom: 95px;
+  right: 20px;
+  width: 350px;
+  height: 450px;
+  background: white;
+  color: black;
+  border-radius: 12px;
+  padding: 15px;
+  z-index: 9999;
+  box-shadow: 0 0 20px rgba(0,0,0,.2);
+}
+
+.messages {
+  height: 300px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}

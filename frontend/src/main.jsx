@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import './style.css';
+import ChatBot from './components/ChatBot';
 
 const profile = {
     name: 'Md. Shakeeb Qamar',
@@ -262,6 +263,7 @@ function App() {
                     <a href={profile.github}>GitHub</a>
                 </div>
             </section>
+            <ChatBot />
         </main>
     );
 }
